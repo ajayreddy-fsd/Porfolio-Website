@@ -1,0 +1,556 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+/* dark shades of primary color*/
+--clr-primary-1: hsl(43, 86%, 17%);
+--clr-primary-2: hsl(43, 77%, 27%);
+--clr-primary-3: hsl(43, 72%, 37%);
+--clr-primary-4: hsl(42, 63%, 48%);
+/* primary/main color */
+--clr-primary-5: hsl(42, 78%, 60%);
+/* lighter shades of primary color */
+--clr-primary-6: hsl(43, 89%, 70%);
+--clr-primary-7: hsl(43, 90%, 76%);
+--clr-primary-8: hsl(45, 86%, 81%);
+--clr-primary-9: hsl(45, 90%, 88%);
+--clr-primary-10: hsl(45, 100%, 96%);
+/* darkest grey - used for headings */
+--clr-grey-1: hsl(209, 61%, 16%);
+--clr-grey-2: hsl(211, 39%, 23%);
+--clr-grey-3: hsl(209, 34%, 30%);
+--clr-grey-4: hsl(209, 28%, 39%);
+/* grey used for paragraphs */
+--clr-grey-5: hsl(210, 22%, 49%);
+--clr-grey-6: hsl(209, 23%, 60%);
+--clr-grey-7: hsl(211, 27%, 70%);
+--clr-grey-8: hsl(210, 31%, 80%);
+--clr-grey-9: hsl(212, 33%, 89%);
+--clr-grey-10: hsl(210, 36%, 96%);
+--clr-white: #fff;
+--ff-primary: "Roboto", sans-serif;
+--ff-secondary: "Open Sans", sans-serif;
+--transition: all 0.3s linear;
+--spacing: 0.25rem;
+--radius: 0.5rem;
+--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+--max-width: 1170px;
+}
+
+
+
+
+
+
+/* !?project part started */
+/* !part started */
+/* !part started */
+/* !part started */
+
+.project-project{
+    width: 100%;
+    background: white;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.project-project h1{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 42px;
+    letter-spacing: 4px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.project-project hr{
+    background: var(--clr-primary-5);
+    border: 1px solid var(--clr-primary-5);
+    height: 2px;
+    width: 80px;
+    margin-bottom: 60px;
+}
+
+.project-project h2{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 15px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.project-project p{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-5);
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.project-project i{
+   color: var(--clr-primary-5);
+}
+
+.project-project a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--ff-secondary);
+    color: var(--clr-primary-5);
+    font-size: 14px;
+    transition: all 0.3s 0s;
+}
+
+/* styling end */
+
+
+
+
+
+
+
+
+/* ?code block */
+/* !the below code is to fix the dimension of each project & fit it's image in it */
+
+.project-project .project{
+    width: 85vw;
+    max-width: 450px;
+
+    height: 75vh;
+    background: var(--clr-grey-10);
+    border-radius: 10px;
+}
+
+.project-project .project img{
+    width: 100%;
+    height: 57%;
+    background: var(--clr-grey-10);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* !the above code is to fix the dimension of each project & fit it's image in it */
+
+
+
+
+
+
+
+
+
+
+/* ?code block */
+/* !the below code-block is to create padding for project-info */
+
+.project-info{
+    padding: 30px 20px;
+}
+
+/* !the above code-block is to create padding for project-info */
+
+
+
+
+
+
+
+
+
+/* ?code block */
+/* !the below code is to style the project-link*/
+
+.project-link{
+    width: 65px;
+    height: 65px;
+    background: var(--clr-primary-5);
+    border: 6px solid var(--clr-grey-10);
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+/* !the above code is to style the project-link*/
+
+
+
+
+
+
+
+
+
+
+/* ?code block */
+/* !the below code is to style the project-link's i-tag & place it at the center of the container*/
+
+.project-link{
+    position: relative;
+}
+
+.project-link i{
+    color: var(--clr-primary-1);
+    font-size: 27px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* !the above code is to style the project-link's i-tag & place it at the center of the container*/
+
+
+
+
+
+
+
+
+
+
+/* ?code block */
+/* !the below code is to place the home-icon at the center of it's project */
+
+.project{
+    position: relative;
+}
+
+.project-link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+/* !the above code is to place the home-icon at the center of it's project */
+
+
+
+
+
+
+
+
+
+
+/* ?code block */
+/* !the below code block is to place the "project-footer" always at the bottom of it's container by name "project" */
+
+.project{
+    position: relative;
+}
+
+.project-footer i{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+}
+
+.project-footer a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+}
+
+/* !the above code block is to place the "project-footer" always at the bottom of it's container by name "project" */
+
+
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.project-project{
+    display: grid;
+    place-content: center center;
+    place-items: center center;
+}
+
+.project-container{
+    display: grid;
+    place-content: center center;
+    place-items: center center;
+}
+
+.project-footer{
+    display: grid;
+    grid-template-columns: repeat(2, 86px);
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+
+
+/* grid assignment ends */
+
+
+
+
+
+
+
+
+
+
+
+/* transition starts */
+
+.project-footer a:hover{
+    color: var(--clr-primary-2);
+}
+
+.project-link i{
+    transition: all 0.3s 0s;
+}
+
+.project-link i:hover{
+    color: var(--clr-primary-10);
+}
+
+
+/* transition ends */
+
+
+
+
+
+
+
+
+
+/* !part ended */
+/* !part ended */
+/* !part ended */
+/* !?project part ended */
+
+
+
+
+/* !?part-9 started */
+/* !part started */
+/* !part started */
+/* !part started */
+
+
+.copyrights{
+    background: #222222;
+    padding: 20px 30px;
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.copyrights i{
+    color: var(--clr-primary-5);
+    font-size: 25px;
+
+    transition: all 0.4s linear 0s;
+}
+
+.copyrights p{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-5);
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+/* styling end */
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.copyrights{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    row-gap: 35px;
+}
+
+.copyrights .social-media{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-content: center;
+    -moz-column-gap: 36px;
+         column-gap: 36px;
+}
+
+/* grid assignment end */
+
+
+
+
+
+
+
+
+
+/* transition starts */
+
+.copyrights i:hover{
+    color: white;
+}
+
+/* transition ends */
+
+/* !part ended */
+/* !part ended */
+/* !part ended */
+/* !?part-9 ended */
+
+
+
+/* !?part-10 started */
+/* !part started */
+/* !part started */
+/* !part started */
+
+
+.menu{
+    width: 100%;
+    height: 80px;
+
+    box-sizing: border-box;
+    padding: 0 5%;
+    background: var(--clr-primary-10);
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.164);
+}
+
+.menu a{
+    text-decoration: none;
+    font-family: var(--ff-primary);
+    text-transform: capitalize;
+    font-size: 17.5px;
+    font-weight: 500;
+    color: var(--clr-grey-1);
+    letter-spacing: 4px;
+    text-shadow: -1px -1px 1px rgba(150, 150, 150, 1);
+
+    transition: all 0.3s 0s;
+}
+
+/* styling end */
+
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.menu{
+    display: grid;
+
+    grid-template-columns: repeat(2, 455px);
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+    z-index: 100;
+}
+
+.nav-links-set{
+    display: grid;
+    grid-template-columns: 65px 70px 95px 90px;
+    /* why given d/f d/f column-sizes? 
+    since each word is of different size */
+
+    /* if not written like above, 
+    there will be space-mismatch */
+
+    justify-items: center;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+}
+
+/* grid assignment ends */
+
+
+
+
+
+
+
+
+/* ?code block */
+/* !the below code fixes the navigation-bar to the screen */
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* !the above code fixes the navigation-bar to the screen */
+
+
+
+
+
+
+
+
+
+/* transition starts */
+
+.menu a:hover{
+    color: var(--clr-primary-5);
+    text-shadow: -1px -1px 1px var(--clr-primary-5);
+}
+
+/* transition ends */
+
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (max-width:1000px){
+
+    .navigation{
+        display: none;
+    }
+
+}
+
+/* media queries end */
+
+
+
+
+
+
+
+/* !part ended */
+/* !part ended */
+/* !part ended */
+/* !?part-10 ended */
+

@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+/* dark shades of primary color*/
+--clr-primary-1: hsl(43, 86%, 17%);
+--clr-primary-2: hsl(43, 77%, 27%);
+--clr-primary-3: hsl(43, 72%, 37%);
+--clr-primary-4: hsl(42, 63%, 48%);
+/* primary/main color */
+--clr-primary-5: hsl(42, 78%, 60%);
+/* lighter shades of primary color */
+--clr-primary-6: hsl(43, 89%, 70%);
+--clr-primary-7: hsl(43, 90%, 76%);
+--clr-primary-8: hsl(45, 86%, 81%);
+--clr-primary-9: hsl(45, 90%, 88%);
+--clr-primary-10: hsl(45, 100%, 96%);
+/* darkest grey - used for headings */
+--clr-grey-1: hsl(209, 61%, 16%);
+--clr-grey-2: hsl(211, 39%, 23%);
+--clr-grey-3: hsl(209, 34%, 30%);
+--clr-grey-4: hsl(209, 28%, 39%);
+/* grey used for paragraphs */
+--clr-grey-5: hsl(210, 22%, 49%);
+--clr-grey-6: hsl(209, 23%, 60%);
+--clr-grey-7: hsl(211, 27%, 70%);
+--clr-grey-8: hsl(210, 31%, 80%);
+--clr-grey-9: hsl(212, 33%, 89%);
+--clr-grey-10: hsl(210, 36%, 96%);
+--clr-white: #fff;
+--ff-primary: "Roboto", sans-serif;
+--ff-secondary: "Open Sans", sans-serif;
+--transition: all 0.3s linear;
+--spacing: 0.25rem;
+--radius: 0.5rem;
+--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+--max-width: 1170px;
+}
+
+.skills{
+    background: var(--clr-primary-9);
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+.skills h1{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.skills hr{
+    background: var(--clr-primary-5);
+    border: 1px solid var(--clr-primary-5);
+    height: 2px;
+    width: 80px;
+    margin-bottom: 60px;
+}
+
+.skills h2{
+    font-family: var(--ff-primary);
+    color: var(--clr-primary-1);
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-top: 23px;
+    margin-bottom: 30px;
+}
+
+.skills h3{
+    font-family: var(--ff-primary);
+    color: var(--clr-primary-1);
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.skills p{
+    font-family: var(--ff-primary);
+    color: var(--clr-primary-1);
+    font-size: 15px;
+    font-weight: 30;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+/* end of styling */
+
+
+
+
+
+
+
+/* ?code block-1 */
+/* !the below code is to fix the dimensions of the "skill-$-bar-container" and then fitting the "skill-$-bar" in it's container i.e., "skill-$-bar-container" completely except for a change in width */
+
+.skill-1-bar-container,
+.skill-2-bar-container,
+.skill-3-bar-container{
+    width: 85vw;
+    max-width: 550px;
+
+    height: 15.5px;
+    background: white;
+    border-radius: 10px;
+}
+
+.skill-1-bar,
+.skill-2-bar,
+.skill-3-bar{
+    height: 100%;
+    background: var(--clr-primary-5);
+    border-radius: 10px;
+}
+
+/* !the above code is to fix the dimensions of the "skill-$-bar-container" and then fitting the "skill-$-bar" in it's container i.e., "skill-$-bar-container" completely except for a change in width */
+
+
+
+
+/* ?code block-2 */
+/* !the below code is to fix the individual widths of "skill-$-bar" */
+
+.skill-1-bar{
+    width: 50%;
+}
+
+.skill-2-bar{
+    width: 70%;
+}
+
+.skill-3-bar{
+    width: 80%;
+}
+
+/* !the above code is to fix the individual widths of "skill-$-bar" */
+
+
+
+
+/* ?code block-3 */
+/* !the below code is to place the percentages at their respective positions above their respective bars */
+
+.skill-1-bar-container,
+.skill-2-bar-container,
+.skill-3-bar-container{
+    position: relative;
+}
+
+.skill-1-bar-container p,
+.skill-2-bar-container p,
+.skill-3-bar-container p{
+    position: absolute;
+    top: -315%;
+}
+
+.skill-1-bar-container p{
+    left: 50%;
+}
+
+.skill-2-bar-container p{
+    left: 70%;
+}
+
+.skill-3-bar-container p{
+    left: 80%;
+}
+
+/* !the above code is to place the percentages at their respective positions above their respective bars */
+
+
+
+
+
+
+/* grid assignment starts */
+
+.skills{
+    display: grid;
+    place-content: center center;
+    place-items: center center;
+}
+
+.skill-set-container{
+    display: grid;
+    place-content: center center;
+    place-items: center center;
+    row-gap: 50px;
+}
+
+/* grid assignment ends */
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (min-width:850px){
+
+    .skill-1-bar-container,
+    .skill-2-bar-container,
+    .skill-3-bar-container{
+        width: 40vw;
+        max-width: 550px;
+    }
+
+    .skill-set-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 8%;
+    }
+
+
+    /* !the below code just changes the font-size of some components */
+
+    .skills h1{
+        font-size: 40px;
+    }
+
+    .skills h2{
+        font-size: 24px;
+    }
+
+    .skills h3{
+        font-size: 16px;
+    }
+
+    .skills p{
+        font-size: 16px;
+    }
+
+    /* !the above code just changes the font-size of some components */
+}
+
+/* media queries end */

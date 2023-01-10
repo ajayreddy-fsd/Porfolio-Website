@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+/* dark shades of primary color*/
+--clr-primary-1: hsl(43, 86%, 17%);
+--clr-primary-2: hsl(43, 77%, 27%);
+--clr-primary-3: hsl(43, 72%, 37%);
+--clr-primary-4: hsl(42, 63%, 48%);
+/* primary/main color */
+--clr-primary-5: hsl(42, 78%, 60%);
+/* lighter shades of primary color */
+--clr-primary-6: hsl(43, 89%, 70%);
+--clr-primary-7: hsl(43, 90%, 76%);
+--clr-primary-8: hsl(45, 86%, 81%);
+--clr-primary-9: hsl(45, 90%, 88%);
+--clr-primary-10: hsl(45, 100%, 96%);
+/* darkest grey - used for headings */
+--clr-grey-1: hsl(209, 61%, 16%);
+--clr-grey-2: hsl(211, 39%, 23%);
+--clr-grey-3: hsl(209, 34%, 30%);
+--clr-grey-4: hsl(209, 28%, 39%);
+/* grey used for paragraphs */
+--clr-grey-5: hsl(210, 22%, 49%);
+--clr-grey-6: hsl(209, 23%, 60%);
+--clr-grey-7: hsl(211, 27%, 70%);
+--clr-grey-8: hsl(210, 31%, 80%);
+--clr-grey-9: hsl(212, 33%, 89%);
+--clr-grey-10: hsl(210, 36%, 96%);
+--clr-white: #fff;
+--ff-primary: "Roboto", sans-serif;
+--ff-secondary: "Open Sans", sans-serif;
+--transition: all 0.3s linear;
+--spacing: 0.25rem;
+--radius: 0.5rem;
+--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+--max-width: 1170px;
+}
+
+.timeline{
+    background: white;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin: 0 10%;
+}
+
+.timeline h1{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.timeline hr{
+    background: var(--clr-primary-5);
+    border: 1px solid var(--clr-primary-5);
+    height: 2px;
+    width: 80px;
+    margin-bottom: 60px;
+}
+
+.timeline h2{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-top: 23px;
+}
+
+.timeline p{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-6);
+    font-size: 15px;
+    font-weight: 0;
+    margin-top: 13px;
+    margin-bottom: 11px;
+    line-height: 21px;
+    max-width: 550px;
+}
+
+.part{
+    max-width: 600px;
+    height: 30vh;
+    padding: 20px 0px;
+    /*! why left & right padding is zero, 
+    will do it later when creating borders */
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /* !why above grid?
+    to place the chidren of "part" at it's center */
+}
+
+/* styling end */
+
+
+
+
+
+
+
+
+
+
+/* ?code block - 1 */
+/* !the below code is to create a circular-shape for the div by name "circle" */
+
+.part .circle{
+    width: 35px;
+    height: 35px;
+    background: var(--clr-primary-5);
+    border-radius: 100%;
+}
+
+/* !the above code is to create a circular-shape for the div by name "circle" */
+
+
+
+
+
+
+
+
+
+/* ?code block - 2 */
+/* !the below code is to place the child-paragraph of div-named "circle" at the center of it's parent*/
+
+.circle{
+    display: grid;
+    place-items: center center;
+    place-content: center center;
+}
+
+/* below code is to style the para inside circle-div */
+.circle p{
+    color: var(--clr-primary-1);
+    font-weight: 900;
+    font-family: var(--ff-secondary);
+}
+
+/* !the above code is to place the child-paragraph of div-named "circle" at the center of it's parent*/
+
+
+
+
+
+
+
+
+
+/* ?code block - 3 */
+/* !the below code is to give a dotted border for the containers by name "timeline-part-$" */
+
+.part{
+    border-top: 2px dashed var(--clr-primary-5);
+}
+
+.part:nth-child(odd){
+    border-right: 2px dashed var(--clr-primary-5);
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+    margin-left: 40px;
+    /* !why?
+    to avoid border-tails on left, 
+    i have added margin on left-side */
+
+    padding-right: 40px;
+    /*! why?
+    to balance the above property */
+}
+
+.part:nth-child(even){
+    border-left: 2px dashed var(--clr-primary-5);
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+
+    margin-right: 40px;
+    /* !why?
+    to avoid border-tails on right, 
+    i have added margin on right-side */
+
+    padding-left: 40px;
+    /*! why?
+    to balance the above property */
+}
+
+.part:first-child{
+    border-top: 0;
+    border-top-right-radius: 0px;
+}
+
+.part:last-child{
+    border-bottom-left-radius: 0px;
+}
+
+/* !the above code is to give a dotted border for the containers by name "timeline-part-$" */
+
+
+
+
+
+
+
+
+
+
+/* ?code block - 4 */
+/* !the below code is to position the circle at it's respective position in each "timeline-part-$"*/
+
+.part{
+    position: relative;
+}
+
+.circle{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timeline-part-1 .circle,
+.timeline-part-3 .circle,
+.timeline-part-5 .circle{
+    left: 100%;
+}
+
+/* !the above code is to position the circle at it's respective position in each "timeline-part-$"*/
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.timeline{
+    display: grid;
+    place-content: center center;
+    place-items: center center;
+}
+
+/* grid assignment ends */
+
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (min-width:900px){
+
+    /* !the below code just adjusts font-size of some headings and paragraphs */
+
+    .timeline h1{
+        font-size: 40px;
+    }
+
+    .timeline h2{
+        font-size: 16px;
+    }
+
+    .timeline p{
+        font-size: 16.5px;  
+    }
+
+    .circle p{
+        font-size: 15px;  
+    }
+
+    /* !the above code just adjusts font-size of some headings and paragraphs */
+
+}
+
+/* media queries end */
+
+
+
+

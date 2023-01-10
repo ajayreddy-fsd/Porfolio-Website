@@ -1,0 +1,2389 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+/* dark shades of primary color*/
+--clr-primary-1: hsl(43, 86%, 17%);
+--clr-primary-2: hsl(43, 77%, 27%);
+--clr-primary-3: hsl(43, 72%, 37%);
+--clr-primary-4: hsl(42, 63%, 48%);
+/* primary/main color */
+--clr-primary-5: hsl(42, 78%, 60%);
+/* lighter shades of primary color */
+--clr-primary-6: hsl(43, 89%, 70%);
+--clr-primary-7: hsl(43, 90%, 76%);
+--clr-primary-8: hsl(45, 86%, 81%);
+--clr-primary-9: hsl(45, 90%, 88%);
+--clr-primary-10: hsl(45, 100%, 96%);
+/* darkest grey - used for headings */
+--clr-grey-1: hsl(209, 61%, 16%);
+--clr-grey-2: hsl(211, 39%, 23%);
+--clr-grey-3: hsl(209, 34%, 30%);
+--clr-grey-4: hsl(209, 28%, 39%);
+/* grey used for paragraphs */
+--clr-grey-5: hsl(210, 22%, 49%);
+--clr-grey-6: hsl(209, 23%, 60%);
+--clr-grey-7: hsl(211, 27%, 70%);
+--clr-grey-8: hsl(210, 31%, 80%);
+--clr-grey-9: hsl(212, 33%, 89%);
+--clr-grey-10: hsl(210, 36%, 96%);
+--clr-white: #fff;
+--ff-primary: "Roboto", sans-serif;
+--ff-secondary: "Open Sans", sans-serif;
+--transition: all 0.3s linear;
+--spacing: 0.25rem;
+--radius: 0.5rem;
+--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+--max-width: 1170px;
+}
+
+
+
+/* !?part-1 started */
+/* !part started */
+/* !part started */
+/* !part started */
+
+
+.hero{
+    background: var(--clr-primary-10);
+    width: 100%;
+    height: 100vh;
+
+    padding-top: 60px;
+    /* why? to leave some space for nav-bar,
+    which will come later */
+}
+
+.hero hr{
+    background: var(--clr-primary-5);
+    border: 1px solid var(--clr-primary-5);
+    height: 2px;
+    width: 85px;
+}
+
+.hero h1{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 45px;
+    letter-spacing: 4px;
+}
+
+.hero p{
+    font-family: var(--ff-secondary);
+    color: var(--clr-grey-4);
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero .hero-info>a{
+    color: var(--clr-primary-1);
+    background: var(--clr-primary-5);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--ff-secondary);
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    display: block;
+    width: 80px;
+    text-align: center;
+    padding: 8px 18px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.267);
+
+    transition: all 0.3s 0s;
+}
+
+.hero .social-media i{
+    color: var(--clr-grey-1);
+    font-size: 25px;
+
+    transition: all 0.3s 0s;
+}
+
+.hero img{
+    width: 400px;
+    height: 480px;
+    
+    -o-object-position: center;
+    
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 8px;
+
+    display: block;
+    /* why?, to fit the image in it's container perfectly */
+
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    /* to make the image slightly drfit from the border of it's container */
+
+    display: none;
+    /* to hide this image, 
+    until a particular media query awakes */
+}
+
+.hero .hero-image{
+    width: 400px;
+    height: 480px;
+    border: 4px solid var(--clr-primary-5);
+    border-radius: 8px;
+
+    position: relative;
+    /* to make the image slightly drfit from the border of it's container */
+
+    display: none;
+    /* to hide this image-container, 
+    until a particular media query awakes */
+}
+
+/* styling end */
+
+
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.hero{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    row-gap: 10px;
+
+    /* why?, to align complete 
+    hero part in a single column */
+}
+
+.hero-info{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    row-gap: 15px;
+    
+    /* why?, to align complete 
+    hero-info part in a single column */
+}
+
+.hero-info .social-media{
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    -moz-column-gap: 14px;
+         column-gap: 14px;
+    margin-top: 30px;
+
+    /* why?, to align all the 
+    social-media icons in a single row */
+}
+
+/* grid assignment ends */
+
+
+
+
+
+
+
+
+
+
+/* transition starts */
+
+.hero .hero-info>a:hover{
+    background: var(--clr-primary-7);
+}
+
+.hero i:hover{
+    color: var(--clr-primary-5);
+}
+
+/* transition ends */
+
+
+
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (min-width:1000px){
+
+    .hero h1{
+        font-size: 62px;
+    }
+
+    .hero p{
+        font-size: 16px;
+    }
+
+    .hero .hero-image{
+        display: block;
+        /* why? 
+        to reveal it, as it was previously hidden */
+    }
+
+    .hero img{
+        display: block;
+        /* why? 
+        to reveal it, as it was previously hidden */
+    }
+
+
+
+    /* !grid assignment starts */
+
+    .hero{
+        display: grid;
+
+        grid-template-columns: repeat(2, 470px);
+
+        justify-items: center;
+        align-content: center;
+        -moz-column-gap: 90px;
+             column-gap: 90px;
+    }
+
+    /* !grid assignment ends */
+
+
+}
+
+/* media queries end */
+
+/* !part ended */
+/* !part ended */
+/* !part ended */
+/* !?part-1 ended */
+
+
+
+/* !?part-2 started */
+/* !part started */
+/* !part started */
+/* !part started */
+
+.about{
+    background: white;
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+.about img{
+    width: 400px;
+    height: 480px;
+
+    -o-object-position: center;
+
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 8px;
+}
+
+.about h1{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-top: 23px;
+    margin-bottom: 10px;
+}
+
+.about hr{
+    background: var(--clr-primary-5);
+    border: 1px solid var(--clr-primary-5);
+    height: 2px;
+    width: 80px;
+}
+
+.about p{
+    font-family: var(--ff-secondary);
+    color: var(--clr-grey-5);
+    font-size: 14px;
+    font-weight: 50;
+    line-height: 21px;
+    margin-top: 28px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.about a{
+    color: var(--clr-primary-1);
+    background: var(--clr-primary-5);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--ff-secondary);
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    padding: 8px 18px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.267);
+
+    transition: all 0.3s 0s;
+}
+
+/* styling end */
+
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.about{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    /* why?, to place the whole content 
+    in a single column grid */
+}
+
+.about-info{
+    margin: 5%;
+    /* to create margin for whole "about-info" */
+}
+
+/* grid assignment ends */
+
+
+
+
+
+
+
+
+
+
+/* transition starts */
+
+.about a:hover{
+    background: var(--clr-primary-7);
+}
+
+/* transition ends */
+
+
+
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (min-width:1050px){
+
+    .about h1{
+        font-size: 40px;
+    }
+
+    .about p{
+        font-size: 16px;
+    }
+
+
+    /*! the below code is to setup drifted border for the image*/
+
+    .about .about-image{
+        width: 400px;
+        height: 480px;
+
+        position: relative;
+        z-index: 5;
+    }
+
+    .about .about-image img{
+        width: 100%;
+        height: 100%;
+
+        display: block;
+    }
+
+    .about .about-image::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+
+        border: 4px solid var(--clr-primary-5);
+        border-radius: 8px;
+        
+        position: absolute;
+        bottom: -30px;
+        left: -30px;
+
+        z-index: -5;
+    }
+
+    /*! the above code is to setup drifted border for the image*/
+
+
+
+
+    /*! grid assignment starts */
+
+    .about{
+        display: grid;
+        grid-template-columns: 500px minmax(40%, 500px);
+        justify-content: center;
+        align-content: center;
+        -moz-column-gap: 4%;
+             column-gap: 4%;
+    }
+
+    /*! grid assignment ends */
+
+}
+
+/* media queries end */
+
+
+
+
+/* !part ended */
+/* !part ended */
+/* !part ended */
+/* !?part-2 ended */
+
+
+/* !?part-3 started */
+/* !part started */
+/* !part started */
+/* !part started */
+
+
+.services{
+    background: var(--clr-grey-10);
+    padding-top: 60px;
+    padding-bottom: 110px;
+}
+
+.services h1{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.services>hr{
+    background: var(--clr-primary-5);
+    border: 1px solid var(--clr-primary-5);
+    height: 2px;
+    width: 80px;
+    margin-bottom: 65px;
+}
+
+.service{
+    background: white;
+    width: 85vw;
+    height: 42vh;
+    border-radius: 10px;
+    padding: 30px;
+    padding-top: 40px;
+    box-sizing: border-box;
+
+    transition: all 0.3s 0s;
+}
+
+.service i{
+    color: var(--clr-grey-1);
+    font-size: 32px;
+
+    transition: all 0.3s 0s;
+}
+
+.service h2{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 15px;
+    letter-spacing: 4px;
+    margin-top: 23px;
+    margin-bottom: 10px;
+
+    transition: all 0.3s 0s;
+}
+
+.service hr{
+    background: var(--clr-primary-5);
+    border: 0.25px solid var(--clr-primary-5);
+    height: 0.25px;
+    width: 50px;
+
+    transition: all 0.3s 0s;
+}
+
+.service p{
+    font-family: var(--ff-secondary);
+    color: var(--clr-grey-5);
+    font-size: 14px;
+    font-weight: 50;
+    line-height: 21px;
+    margin-top: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+
+    transition: all 0.3s 0s;
+}
+
+/* styling end */
+
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.services{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.services-container{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    row-gap: 30px;
+}
+
+.service{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+/* grid assignment ends */
+
+
+
+
+
+
+
+
+
+/* transition starts */
+
+.service:hover{
+    background: var(--clr-primary-5);
+}
+
+.service:hover i, 
+.service:hover h2,
+.service:hover p{
+    color: white;
+}
+
+.service:hover hr{
+    background: white;
+    border: 0.25px solid white;
+}
+
+/* transition ends */
+
+
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (min-width:700px){
+
+    .service{
+        width: 45vw;
+        height: 48vh;
+        max-width: 370px;
+    }
+
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 30px;
+             column-gap: 30px;
+    }
+    
+
+    /* !the following code is just to increase the font-size */
+
+    .services h1{
+        font-size: 40px;
+    }
+
+    .service h2{
+        font-size: 17px;
+    }
+
+    .service p{
+        font-size: 16px;
+    }
+
+    /* !the above code is just to increase the font-size */
+
+
+}
+
+@media screen and (min-width:1150px){
+
+    .service{
+        width: 30vw;
+        max-width: 370px;
+    }
+
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        -moz-column-gap: 30px;
+             column-gap: 30px;
+    }
+    
+}
+
+/* media queries end */
+
+
+
+/* !part ended */
+/* !part ended */
+/* !part ended */
+/* !?part-3 ended */
+
+
+
+/* !?part-4 started */
+/* !part started */
+/* !part started */
+/* !part started */
+
+
+.works{
+    background: white;
+    padding-top: 63px;
+    padding-bottom: 80px;
+}
+
+.works h1{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.works hr{
+    background: var(--clr-primary-5);
+    border: 1px solid var(--clr-primary-5);
+    height: 2px;
+    width: 80px;
+}
+
+.works p{
+    font-family: var(--ff-secondary);
+    color: var(--clr-grey-5);
+    font-size: 14px;
+    font-weight: 50;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 65px;
+    padding: 0px 50px;
+    text-align: justify;
+
+    max-width: 500px;
+    /* !why? to limit the number of lines this paragraph is gonna take */
+}
+
+.work{
+    background: var(--clr-primary-5);
+    /* ?why?, this color will be visible when hovered */
+
+    border-radius: 10px;
+
+    width: 85vw;
+    height: 36vh;
+
+    transition: all 0.5s 0s;
+}
+
+.work img{
+    width: 100%;
+    height: 100%;
+    /* !why? to fill the image completely in it's container "work" , remaning things in the container will be placed at the center of their container */
+
+    -o-object-position: center;
+
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+
+    transition: all 0.5s 0s;
+}
+
+.work h2{
+    font-family: var(--ff-primary);
+    color: white;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.work h3{
+    font-family: var(--ff-primary);
+    color: white;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 50;
+    text-align: center;
+}
+
+/* !the below code is to place "work-title" at the center of it's container named "work work-$" */
+
+.work{
+    position: relative;
+}
+
+.work .work-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+    /*? why, to hide project title, until hovered over "work" */
+
+    transition: all 0.5s 0s;
+}
+
+/* !the above code is to place "work-title" at the center of it's container named "work work-$" */
+
+/* styling end */
+
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.works{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.works-container{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    row-gap: 32px;
+}
+
+/* grid assignment ends */
+
+
+
+
+
+
+
+
+
+
+/* transition starts */
+
+/*! following is the code used to create border for "work" using pseudo element */
+
+.work::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    border: 4px solid white;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    transition: all 0.5s 0s;
+}
+
+/*! above is the code used to create border for "work" using pseudo element */
+
+.work:hover::before{
+    opacity: 1;
+    transform: scale(0.8);
+}
+
+.work:hover .work-title{
+    opacity: 1;
+}
+
+.work:hover img{
+    opacity: 0.13;
+}
+
+/* transition ends */
+
+
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (min-width:650px){
+
+    .work{
+        width: 42vw;
+    }
+
+    .works-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 30px;
+             column-gap: 30px;
+    }
+
+}
+
+@media screen and (min-width:1000px){
+
+    .work{
+        width: 28vw;
+    }
+
+    .works-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (min-width:1200px){
+
+    .work{
+        height: 100%;
+        width: 100%;
+    }
+
+    .works-container{
+        display: grid;
+        
+        grid-template-columns: repeat(3, 360px);
+        grid-template-rows: repeat(2, 200px);
+
+        grid-template-areas:
+        "a b b"
+        "a x y"
+        ;
+    }
+
+    .work-1{
+        grid-area: a;
+    }
+
+    .work-2{
+        grid-area: b;
+    }
+
+    .work-3{
+        grid-area: x;
+    }
+
+    .work-4{
+        grid-area: y;
+    }
+
+}
+
+/* media queries end */
+
+/* !part ended */
+/* !part ended */
+/* !part ended */
+/* !?part-4 ended */
+
+
+
+/* !?part-5 started */
+/* !part started */
+/* !part started */
+/* !part started */
+
+
+.contact{
+    background: white;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.contact h1{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.contact hr{
+    background: var(--clr-primary-5);
+    border: 1px solid var(--clr-primary-5);
+    height: 2px;
+    width: 80px;
+}
+
+.contact p{
+    font-family: var(--ff-secondary);
+    color: var(--clr-grey-5);
+    font-size: 14px;
+    font-weight: 50;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 30px;
+    padding: 0px 75px;
+    text-align: center;
+
+    max-width: 450px;
+    /* !why? to limit the number of lines this paragraph is gonna take */
+}
+
+.contact a{
+    color: var(--clr-primary-1);
+    background: var(--clr-primary-5);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--ff-secondary);
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    display: block;
+    width: 130px;
+    text-align: center;
+    padding: 8px 18px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.267);
+
+    transition: all 0.3s 0s;
+}
+
+.contact-info{
+    width: 100%;
+    max-width: 640px;
+
+    height: 70%;
+    max-height: 550px;
+    /* ?this height is 85% of the height of it's container which is "contact" */
+
+    background: var(--clr-primary-10);
+
+    padding-top: 33px;
+    box-sizing: border-box;
+}
+
+/* styling end */
+
+
+
+
+
+
+
+
+/* ?code block - 1 */
+/* !the below code is to fit the video completely in it's container by name "contacts-container". later, "contact-info" will be placed at the center of this container.
+ first i will set the dimensions of the container 
+ & then fit the video in it 
+ by setting video's width & height = 100% */
+
+.contacts-container{
+    width: 100%;
+    height: 120vh;
+}
+
+.contact video{
+    width: 100%;
+    height: 100%;
+
+    -o-object-position: center;
+
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    /* ?just like we fit images properly in a particular width & height by using the above props,
+    ?similarly, we can also use them for fitting videos */
+}
+
+/* !the above code is to fit the video completely in it's container by name "contacts-container"..later, "contact-info" will be placed at the center of this container*/
+
+
+
+
+
+
+
+
+/* ?code block - 2 */
+/* !the below code is to place "contact-info" at the center of it's container by name "contacts-container" */
+
+.contacts-container{
+    position: relative;
+}
+
+.contact-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -44%);
+}
+
+/* !the above code is to place "contact-info" at the center of it's container by name "contacts-container" */
+
+
+
+
+
+
+
+
+
+
+/* ?code block - 3 */
+/* !the below code is to create overlay for the video */
+
+.contacts-container{
+    background: white;
+}
+
+.contact video{
+    opacity: 0.3;
+}
+
+/* !the above code is to create overlay for the video */
+
+
+
+
+
+
+
+
+
+/* ?code block - 4 */
+/* !the below code is to provide clip-path for the video & contact-info */
+
+.contact video{
+    -webkit-clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+            clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+}
+
+.contact-info{
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+/*! the above code is to provide clip-path for the video & contact-info */
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.contact{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.contact-info{
+    display: grid;
+    justify-items: center;
+    align-content: flex-start;
+    /* ?why?, if not then contact-info is not visible in it's clip-path */
+}
+
+/* grid assignment ends */
+
+
+
+
+
+
+
+
+
+/* transition starts */
+
+.contact a:hover{
+    background: var(--clr-primary-7);
+}
+
+/* transition ends */
+
+
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (min-width:1000px){
+
+    .contact h1{
+        font-size: 37px;
+    }
+
+    .contact p{
+        font-size: 15.5px;
+    }
+
+    .contact-info{
+        padding-top: 40px;
+    }
+    
+
+}
+
+/* media queries end */
+
+/* !part ended */
+/* !part ended */
+/* !part ended */
+/* !?part-5 ended */
+
+
+
+/* !?part-6 started */
+/* !part started */
+/* !part started */
+/* !part started */
+
+
+.skills{
+    background: var(--clr-primary-9);
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+.skills h1{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.skills hr{
+    background: var(--clr-primary-5);
+    border: 1px solid var(--clr-primary-5);
+    height: 2px;
+    width: 80px;
+    margin-bottom: 60px;
+}
+
+.skills h2{
+    font-family: var(--ff-primary);
+    color: var(--clr-primary-1);
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-top: 23px;
+    margin-bottom: 30px;
+}
+
+.skills h3{
+    font-family: var(--ff-primary);
+    color: var(--clr-primary-1);
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.skills p{
+    font-family: var(--ff-primary);
+    color: var(--clr-primary-1);
+    font-size: 15px;
+    font-weight: 30;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+/* end of styling */
+
+
+
+
+
+
+
+/* ?code block-1 */
+/* !the below code is to fix the dimensions of the "skill-$-bar-container" and then fitting the "skill-$-bar" in it's container i.e., "skill-$-bar-container" completely except for a change in width */
+
+.skill-1-bar-container,
+.skill-2-bar-container,
+.skill-3-bar-container{
+    width: 85vw;
+    max-width: 550px;
+
+    height: 15.5px;
+    background: white;
+    border-radius: 10px;
+}
+
+.skill-1-bar,
+.skill-2-bar,
+.skill-3-bar{
+    height: 100%;
+    background: var(--clr-primary-5);
+    border-radius: 10px;
+}
+
+/* !the above code is to fix the dimensions of the "skill-$-bar-container" and then fitting the "skill-$-bar" in it's container i.e., "skill-$-bar-container" completely except for a change in width */
+
+
+
+
+/* ?code block-2 */
+/* !the below code is to fix the individual widths of "skill-$-bar" */
+
+.skill-1-bar{
+    width: 50%;
+}
+
+.skill-2-bar{
+    width: 70%;
+}
+
+.skill-3-bar{
+    width: 80%;
+}
+
+/* !the above code is to fix the individual widths of "skill-$-bar" */
+
+
+
+
+/* ?code block-3 */
+/* !the below code is to place the percentages at their respective positions above their respective bars */
+
+.skill-1-bar-container,
+.skill-2-bar-container,
+.skill-3-bar-container{
+    position: relative;
+}
+
+.skill-1-bar-container p,
+.skill-2-bar-container p,
+.skill-3-bar-container p{
+    position: absolute;
+    top: -315%;
+}
+
+.skill-1-bar-container p{
+    left: 50%;
+}
+
+.skill-2-bar-container p{
+    left: 70%;
+}
+
+.skill-3-bar-container p{
+    left: 80%;
+}
+
+/* !the above code is to place the percentages at their respective positions above their respective bars */
+
+
+
+
+
+
+/* grid assignment starts */
+
+.skills{
+    display: grid;
+    place-content: center center;
+    place-items: center center;
+}
+
+.skill-set-container{
+    display: grid;
+    place-content: center center;
+    place-items: center center;
+    row-gap: 50px;
+}
+
+/* grid assignment ends */
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (min-width:850px){
+
+    .skill-1-bar-container,
+    .skill-2-bar-container,
+    .skill-3-bar-container{
+        width: 40vw;
+        max-width: 550px;
+    }
+
+    .skill-set-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 8%;
+             column-gap: 8%;
+    }
+
+
+    /* !the below code just changes the font-size of some components */
+
+    .skills h1{
+        font-size: 40px;
+    }
+
+    .skills h2{
+        font-size: 24px;
+    }
+
+    .skills h3{
+        font-size: 16px;
+    }
+
+    .skills p{
+        font-size: 16px;
+    }
+
+    /* !the above code just changes the font-size of some components */
+}
+
+/* media queries end */
+
+/* !part ended */
+/* !part ended */
+/* !part ended */
+/* !?part-6 ended */
+
+
+
+/* !?part-7 started */
+/* !part started */
+/* !part started */
+/* !part started */
+
+
+.timeline{
+    background: white;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin: 0 10%;
+}
+
+.timeline h1{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.timeline hr{
+    background: var(--clr-primary-5);
+    border: 1px solid var(--clr-primary-5);
+    height: 2px;
+    width: 80px;
+    margin-bottom: 60px;
+}
+
+.timeline h2{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-top: 23px;
+}
+
+.timeline p{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-6);
+    font-size: 15px;
+    font-weight: 0;
+    margin-top: 13px;
+    margin-bottom: 11px;
+    line-height: 21px;
+    max-width: 550px;
+}
+
+.part{
+    max-width: 600px;
+    height: 30vh;
+    padding: 20px 0px;
+    /*! why left & right padding is zero, 
+    will do it later when creating borders */
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /* !why above grid?
+    to place the chidren of "part" at it's center */
+}
+
+/* styling end */
+
+
+
+
+
+
+
+
+
+
+/* ?code block - 1 */
+/* !the below code is to create a circular-shape for the div by name "circle" */
+
+.part .circle{
+    width: 35px;
+    height: 35px;
+    background: var(--clr-primary-5);
+    border-radius: 100%;
+}
+
+/* !the above code is to create a circular-shape for the div by name "circle" */
+
+
+
+
+
+
+
+
+
+/* ?code block - 2 */
+/* !the below code is to place the child-paragraph of div-named "circle" at the center of it's parent*/
+
+.circle{
+    display: grid;
+    place-items: center center;
+    place-content: center center;
+}
+
+/* below code is to style the para inside circle-div */
+.circle p{
+    color: var(--clr-primary-1);
+    font-weight: 900;
+    font-family: var(--ff-secondary);
+}
+
+/* !the above code is to place the child-paragraph of div-named "circle" at the center of it's parent*/
+
+
+
+
+
+
+
+
+
+/* ?code block - 3 */
+/* !the below code is to give a dotted border for the containers by name "timeline-part-$" */
+
+.part{
+    border-top: 2px dashed var(--clr-primary-5);
+}
+
+.part:nth-child(odd){
+    border-right: 2px dashed var(--clr-primary-5);
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+    margin-left: 40px;
+    /* !why?
+    to avoid border-tails on left, 
+    i have added margin on left-side */
+
+    padding-right: 40px;
+    /*! why?
+    to balance the above property */
+}
+
+.part:nth-child(even){
+    border-left: 2px dashed var(--clr-primary-5);
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+
+    margin-right: 40px;
+    /* !why?
+    to avoid border-tails on right, 
+    i have added margin on right-side */
+
+    padding-left: 40px;
+    /*! why?
+    to balance the above property */
+}
+
+.part:first-child{
+    border-top: 0;
+    border-top-right-radius: 0px;
+}
+
+.part:last-child{
+    border-bottom-left-radius: 0px;
+}
+
+/* !the above code is to give a dotted border for the containers by name "timeline-part-$" */
+
+
+
+
+
+
+
+
+
+
+/* ?code block - 4 */
+/* !the below code is to position the circle at it's respective position in each "timeline-part-$"*/
+
+.part{
+    position: relative;
+}
+
+.circle{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timeline-part-1 .circle,
+.timeline-part-3 .circle,
+.timeline-part-5 .circle{
+    left: 100%;
+}
+
+/* !the above code is to position the circle at it's respective position in each "timeline-part-$"*/
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.timeline{
+    display: grid;
+    place-content: center center;
+    place-items: center center;
+}
+
+/* grid assignment ends */
+
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (min-width:900px){
+
+    /* !the below code just adjusts font-size of some headings and paragraphs */
+
+    .timeline h1{
+        font-size: 40px;
+    }
+
+    .timeline h2{
+        font-size: 16px;
+    }
+
+    .timeline p{
+        font-size: 16.5px;  
+    }
+
+    .circle p{
+        font-size: 15px;  
+    }
+
+    /* !the above code just adjusts font-size of some headings and paragraphs */
+
+}
+
+/* media queries end */
+
+
+
+
+
+
+/* !part ended */
+/* !part ended */
+/* !part ended */
+/* !?part-7 ended */
+
+
+
+/* !?part-8 started */
+/* !part started */
+/* !part started */
+/* !part started */
+
+
+.blog{
+    background: var(--clr-grey-10);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.blog h1{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.blog hr{
+    background: var(--clr-primary-5);
+    border: 1px solid var(--clr-primary-5);
+    height: 2px;
+    width: 80px;
+    margin-bottom: 80px;
+}
+
+.blog h2{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-top: 23px;
+    margin-bottom: 15px;
+}
+
+.blog p{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-4);
+    font-size: 15px;
+    font-weight: 0;
+    margin-top: 13px;
+    margin-bottom: 11px;
+    line-height: 21px;
+}
+
+.post .post-footer p{
+    color: var(--clr-primary-5);
+    font-family: var(--ff-secondary);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* styling end */
+
+
+
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code is to style the main-image of each article */
+
+.post{
+    width: 90vw;
+    height: 65vh;
+    border-radius: 10px;
+}
+
+
+/**special-code *//**special-code *//**special-code */
+/**special-code *//**special-code *//**special-code */
+/**special-code *//**special-code *//**special-code */
+/**special-code *//**special-code *//**special-code */
+/**special-code *//**special-code *//**special-code */
+.card-front{
+    width: 100%;
+    height: 100%;
+    background: white;
+
+    /*! why all this hungama ?
+    to fit the main-image of the article in it's post perfectly
+
+    --> note that main-img is the child of "card-front" & this is the child of "post post-$"
+
+    -->above code block fixes the dimensions of "post post-$"
+    -->this code makes "card-front" = 100% of "post post-$"     both wrt width & height
+    -->below code is for main-image which is placed wrt "card-fornt" */
+}
+
+
+.post img{
+    width: 100%;
+    height: 48%;
+    /* !why?
+    because the image must fit 100% width of it's container & 50% height of it's container */
+
+    -o-object-position: center;
+
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* !the above code is to style the main-image of each article */
+
+
+
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code is to style the profile-picture in the article */
+
+.post .post-footer img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+/* !the above code is to style the profile-picture in the article */
+
+
+
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code is to style the anchor-tag of the article */
+
+.blog a{
+    color: var(--clr-primary-1);
+    background: var(--clr-primary-5);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--ff-secondary);
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    display: block;
+    width: 115px;
+    text-align: center;
+    padding: 8px 18px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.267);
+
+    transition: all 0.3s 0s;
+}
+
+/* !the above code is to style the anchor-tag of the article */
+
+
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code is to create margin for post-info */
+
+.post-info{
+    margin: 10px 20px;
+}
+
+/* !the above code is to create margin for post-info */
+
+
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code is to place the "post-footer" at the end of it's container by name "post" */
+
+.post{
+    position: relative;
+}
+
+/* note that this image is positioned not wrt it's immediate parent, but wrt it's grand-parent */
+.post-footer img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+/* note that this paragraph is positioned not wrt it's immediate parent, but wrt it's grand-parent */
+.post-footer p{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px 20px;
+}
+
+/* !the above code is to place the "post-footer" at the end of it's container by name "post" */
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code styles the card-back */
+
+.card-back{
+    width: 100%;
+    height: 100%;
+
+    /* *"card-back's" parent is "post post-$", so above percentages are wrt "post post-$" */
+
+    background: var(--clr-primary-10);
+}
+
+/* !the above code styles the card-back */
+
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code is to position the "card-back" such that it fills it's container "post" completely*/
+
+.post{
+    position: relative;
+}
+
+.card-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* !the above code is to position the "card-back" such that it fills it's container "post" completely*/
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code is to place the "post-link" at the center of it's container "post" */
+
+.post{
+    position: relative;
+}
+
+.card-back a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* !the above code is to place the "post-link" at the center of it's container "post" */
+
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.blog{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.posts-container{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    row-gap: 50px;
+}
+
+.post-footer{
+    display: grid;
+    grid-template-columns: repeat(2, 75px);
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 20px 20px;
+    margin-top: 6%;
+    /*! why?
+    to create margin for post-footer */
+}
+
+/* grid assignment ends */
+
+
+
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code hides whatever u want */
+
+.card-front{
+    opacity: 1;
+}
+
+.card-back{
+    opacity: 0;
+}
+
+/* !the above code hides whatever u want */
+
+
+
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code is pre-transition setup */
+
+.post, .card-front, .card-back{
+
+    transition: opacity 0.01s linear 1s, transform 2s linear 0s;
+
+    /* *why?, since i want opacity to change instantly with a delay, also including "linear" is a must for smooth transition */
+}
+
+.card-back{
+
+    transform: rotateY(-180deg);
+
+    /* *why wrting the property is important? if u want to put this prop in  */
+    /* !"post:hover  card-back{}"  */
+    /* *then text inside the a-tag will be reversed, to overcome that, shd write it here */
+}
+
+/* !the above code is pre-transition setup */
+
+
+
+
+
+
+
+
+
+/* transition starts */
+
+.blog a:hover{
+    background: var(--clr-primary-7);
+}
+
+.post:hover .card-front{
+    opacity: 0;
+    transform: rotateY(-180deg);
+}
+
+.post:hover .card-back{
+    opacity: 1;
+
+    transform: rotateY(0deg);
+
+    /* ?why zero-deg?, since the element is already rotated by "180-deg" in it's original-code-block, I'm writing here zero-deg to bring it back to it's original position */
+
+    /** also, since i have written here zero-deg, it doesn't mean that the element won't rotate, it depends on the original position of the element.  */
+
+    /* ![always remember degree-positions are fixed] */
+}
+
+/* transition ends */
+
+
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (min-width:750px){
+
+    .post{
+        width: 44vw;
+        height: 70vh;
+    }
+
+    .posts-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 25px;
+             column-gap: 25px;
+    }
+
+}
+
+@media screen and (min-width:1100px){
+
+    .post{
+        width: 28vw;
+    }
+
+    .posts-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        -moz-column-gap: 40px;
+             column-gap: 40px;
+    }
+
+}
+
+/* media queries end */
+
+
+
+
+
+
+
+/* !part ended */
+/* !part ended */
+/* !part ended */
+/* !?part-8 ended */
+
+
+/* !?part-9 started */
+/* !part started */
+/* !part started */
+/* !part started */
+
+
+.copyrights{
+    background: #222222;
+    padding: 20px 30px;
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.copyrights i{
+    color: var(--clr-primary-5);
+    font-size: 25px;
+
+    transition: all 0.4s linear 0s;
+}
+
+.copyrights p{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-5);
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+/* styling end */
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.copyrights{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    row-gap: 35px;
+}
+
+.copyrights .social-media{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-content: center;
+    -moz-column-gap: 36px;
+         column-gap: 36px;
+}
+
+/* grid assignment end */
+
+
+
+
+
+
+
+
+
+/* transition starts */
+
+.copyrights i:hover{
+    color: white;
+}
+
+/* transition ends */
+
+/* !part ended */
+/* !part ended */
+/* !part ended */
+/* !?part-9 ended */
+
+
+
+/* !?part-10 started */
+/* !part started */
+/* !part started */
+/* !part started */
+
+
+.menu{
+    width: 100%;
+    height: 80px;
+
+    box-sizing: border-box;
+    padding: 0 5%;
+    background: var(--clr-primary-10);
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.164);
+}
+
+.menu a{
+    text-decoration: none;
+    font-family: var(--ff-primary);
+    text-transform: capitalize;
+    font-size: 17.5px;
+    font-weight: 500;
+    color: var(--clr-grey-1);
+    letter-spacing: 4px;
+    text-shadow: -1px -1px 1px rgba(150, 150, 150, 1);
+
+    transition: all 0.3s 0s;
+}
+
+/* styling end */
+
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.menu{
+    display: grid;
+
+    grid-template-columns: repeat(2, 455px);
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+    z-index: 100;
+}
+
+.nav-links-set{
+    display: grid;
+    grid-template-columns: 65px 70px 95px 90px;
+    /* why given d/f d/f column-sizes? 
+    since each word is of different size */
+
+    /* if not written like above, 
+    there will be space-mismatch */
+
+    justify-items: center;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+}
+
+/* grid assignment ends */
+
+
+
+
+
+
+
+
+/* ?code block */
+/* !the below code fixes the navigation-bar to the screen */
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* !the above code fixes the navigation-bar to the screen */
+
+
+
+
+
+
+
+
+
+/* transition starts */
+
+.menu a:hover{
+    color: var(--clr-primary-5);
+    text-shadow: -1px -1px 1px var(--clr-primary-5);
+}
+
+/* transition ends */
+
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (max-width:1000px){
+
+    .navigation{
+        display: none;
+    }
+
+}
+
+/* media queries end */
+
+
+
+
+
+
+
+/* !part ended */
+/* !part ended */
+/* !part ended */
+/* !?part-10 ended */
+

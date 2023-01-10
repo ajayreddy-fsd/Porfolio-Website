@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+/* dark shades of primary color*/
+--clr-primary-1: hsl(43, 86%, 17%);
+--clr-primary-2: hsl(43, 77%, 27%);
+--clr-primary-3: hsl(43, 72%, 37%);
+--clr-primary-4: hsl(42, 63%, 48%);
+/* primary/main color */
+--clr-primary-5: hsl(42, 78%, 60%);
+/* lighter shades of primary color */
+--clr-primary-6: hsl(43, 89%, 70%);
+--clr-primary-7: hsl(43, 90%, 76%);
+--clr-primary-8: hsl(45, 86%, 81%);
+--clr-primary-9: hsl(45, 90%, 88%);
+--clr-primary-10: hsl(45, 100%, 96%);
+/* darkest grey - used for headings */
+--clr-grey-1: hsl(209, 61%, 16%);
+--clr-grey-2: hsl(211, 39%, 23%);
+--clr-grey-3: hsl(209, 34%, 30%);
+--clr-grey-4: hsl(209, 28%, 39%);
+/* grey used for paragraphs */
+--clr-grey-5: hsl(210, 22%, 49%);
+--clr-grey-6: hsl(209, 23%, 60%);
+--clr-grey-7: hsl(211, 27%, 70%);
+--clr-grey-8: hsl(210, 31%, 80%);
+--clr-grey-9: hsl(212, 33%, 89%);
+--clr-grey-10: hsl(210, 36%, 96%);
+--clr-white: #fff;
+--ff-primary: "Roboto", sans-serif;
+--ff-secondary: "Open Sans", sans-serif;
+--transition: all 0.3s linear;
+--spacing: 0.25rem;
+--radius: 0.5rem;
+--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+--max-width: 1170px;
+}
+
+
+
+
+
+/* !?contact part started */
+/* !part started */
+/* !part started */
+/* !part started */
+
+.contact-contact{
+    width: 100%;
+    height: 80vh;
+    background: var(--clr-primary-10);
+
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+.contact-contact h1{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 42px;
+    letter-spacing: 4px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.contact-contact hr{
+    background: var(--clr-primary-5);
+    border: 1px solid var(--clr-primary-5);
+    height: 2px;
+    width: 80px;
+}
+
+.contact-contact p{
+    font-family: var(--ff-secondary);
+    color: var(--clr-grey-5);
+    font-size: 15px;
+    font-weight: 50;
+    line-height: 35px;
+    margin-top: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 40px 40px;
+}
+
+.contact-contact a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--clr-primary-5);
+
+    transition: all 0.3s 0s;
+}
+
+/* styling end */
+
+
+
+
+
+/* transition start */
+
+.contact-contact a:hover{
+    color: var(--clr-primary-2);
+}
+
+/* transition end */
+
+
+
+/* media queries start */
+
+@media screen and (min-width:1000px){
+
+    .contact-contact h1{
+        font-size: 60px;
+    }
+
+    .contact-contact p{
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+}
+
+/* media queries start */
+
+
+
+
+
+/* !part ended */
+/* !part ended */
+/* !part ended */
+/* !?contact part ended */
+
+
+
+
+
+
+
+
+/* !?part-9 started */
+/* !part started */
+/* !part started */
+/* !part started */
+
+
+.copyrights{
+    background: #222222;
+    padding: 20px 30px;
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.copyrights i{
+    color: var(--clr-primary-5);
+    font-size: 25px;
+
+    transition: all 0.4s linear 0s;
+}
+
+.copyrights p{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-5);
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+/* styling end */
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.copyrights{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    row-gap: 35px;
+}
+
+.copyrights .social-media{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-content: center;
+    -moz-column-gap: 36px;
+         column-gap: 36px;
+}
+
+/* grid assignment end */
+
+
+
+
+
+
+
+
+
+/* transition starts */
+
+.copyrights i:hover{
+    color: white;
+}
+
+/* transition ends */
+
+/* !part ended */
+/* !part ended */
+/* !part ended */
+/* !?part-9 ended */
+
+
+
+/* !?part-10 started */
+/* !part started */
+/* !part started */
+/* !part started */
+
+
+.menu{
+    width: 100%;
+    height: 80px;
+
+    box-sizing: border-box;
+    padding: 0 5%;
+    background: var(--clr-primary-10);
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.164);
+}
+
+.menu a{
+    text-decoration: none;
+    font-family: var(--ff-primary);
+    text-transform: capitalize;
+    font-size: 17.5px;
+    font-weight: 500;
+    color: var(--clr-grey-1);
+    letter-spacing: 4px;
+    text-shadow: -1px -1px 1px rgba(150, 150, 150, 1);
+
+    transition: all 0.3s 0s;
+}
+
+/* styling end */
+
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.menu{
+    display: grid;
+
+    grid-template-columns: repeat(2, 455px);
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+    z-index: 100;
+}
+
+.nav-links-set{
+    display: grid;
+    grid-template-columns: 65px 70px 95px 90px;
+    /* why given d/f d/f column-sizes? 
+    since each word is of different size */
+
+    /* if not written like above, 
+    there will be space-mismatch */
+
+    justify-items: center;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+}
+
+/* grid assignment ends */
+
+
+
+
+
+
+
+
+/* ?code block */
+/* !the below code fixes the navigation-bar to the screen */
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* !the above code fixes the navigation-bar to the screen */
+
+
+
+
+
+
+
+
+
+/* transition starts */
+
+.menu a:hover{
+    color: var(--clr-primary-5);
+    text-shadow: -1px -1px 1px var(--clr-primary-5);
+}
+
+/* transition ends */
+
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (max-width:1000px){
+
+    .navigation{
+        display: none;
+    }
+
+}
+
+/* media queries end */
+
+
+
+
+
+
+
+/* !part ended */
+/* !part ended */
+/* !part ended */
+/* !?part-10 ended */
+

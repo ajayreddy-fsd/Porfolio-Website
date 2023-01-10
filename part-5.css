@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+/* dark shades of primary color*/
+--clr-primary-1: hsl(43, 86%, 17%);
+--clr-primary-2: hsl(43, 77%, 27%);
+--clr-primary-3: hsl(43, 72%, 37%);
+--clr-primary-4: hsl(42, 63%, 48%);
+/* primary/main color */
+--clr-primary-5: hsl(42, 78%, 60%);
+/* lighter shades of primary color */
+--clr-primary-6: hsl(43, 89%, 70%);
+--clr-primary-7: hsl(43, 90%, 76%);
+--clr-primary-8: hsl(45, 86%, 81%);
+--clr-primary-9: hsl(45, 90%, 88%);
+--clr-primary-10: hsl(45, 100%, 96%);
+/* darkest grey - used for headings */
+--clr-grey-1: hsl(209, 61%, 16%);
+--clr-grey-2: hsl(211, 39%, 23%);
+--clr-grey-3: hsl(209, 34%, 30%);
+--clr-grey-4: hsl(209, 28%, 39%);
+/* grey used for paragraphs */
+--clr-grey-5: hsl(210, 22%, 49%);
+--clr-grey-6: hsl(209, 23%, 60%);
+--clr-grey-7: hsl(211, 27%, 70%);
+--clr-grey-8: hsl(210, 31%, 80%);
+--clr-grey-9: hsl(212, 33%, 89%);
+--clr-grey-10: hsl(210, 36%, 96%);
+--clr-white: #fff;
+--ff-primary: "Roboto", sans-serif;
+--ff-secondary: "Open Sans", sans-serif;
+--transition: all 0.3s linear;
+--spacing: 0.25rem;
+--radius: 0.5rem;
+--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+--max-width: 1170px;
+}
+
+.contact{
+    background: white;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.contact h1{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.contact hr{
+    background: var(--clr-primary-5);
+    border: 1px solid var(--clr-primary-5);
+    height: 2px;
+    width: 80px;
+}
+
+.contact p{
+    font-family: var(--ff-secondary);
+    color: var(--clr-grey-5);
+    font-size: 14px;
+    font-weight: 50;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 30px;
+    padding: 0px 75px;
+    text-align: center;
+
+    max-width: 450px;
+    /* !why? to limit the number of lines this paragraph is gonna take */
+}
+
+.contact a{
+    color: var(--clr-primary-1);
+    background: var(--clr-primary-5);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--ff-secondary);
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    display: block;
+    width: 130px;
+    text-align: center;
+    padding: 8px 18px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.267);
+
+    transition: all 0.3s 0s;
+}
+
+.contact-info{
+    width: 100%;
+    max-width: 640px;
+
+    height: 70%;
+    max-height: 550px;
+    /* ?this height is 85% of the height of it's container which is "contact" */
+
+    background: var(--clr-primary-10);
+
+    padding-top: 33px;
+    box-sizing: border-box;
+}
+
+/* styling end */
+
+
+
+
+
+
+
+
+/* ?code block - 1 */
+/* !the below code is to fit the video completely in it's container by name "contacts-container". later, "contact-info" will be placed at the center of this container.
+ first i will set the dimensions of the container 
+ & then fit the video in it 
+ by setting video's width & height = 100% */
+
+.contacts-container{
+    width: 100%;
+    height: 120vh;
+}
+
+.contact video{
+    width: 100%;
+    height: 100%;
+
+    object-position: center;
+    object-fit: cover;
+    /* ?just like we fit images properly in a particular width & height by using the above props,
+    ?similarly, we can also use them for fitting videos */
+}
+
+/* !the above code is to fit the video completely in it's container by name "contacts-container"..later, "contact-info" will be placed at the center of this container*/
+
+
+
+
+
+
+
+
+/* ?code block - 2 */
+/* !the below code is to place "contact-info" at the center of it's container by name "contacts-container" */
+
+.contacts-container{
+    position: relative;
+}
+
+.contact-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -44%);
+}
+
+/* !the above code is to place "contact-info" at the center of it's container by name "contacts-container" */
+
+
+
+
+
+
+
+
+
+
+/* ?code block - 3 */
+/* !the below code is to create overlay for the video */
+
+.contacts-container{
+    background: white;
+}
+
+.contact video{
+    opacity: 0.3;
+}
+
+/* !the above code is to create overlay for the video */
+
+
+
+
+
+
+
+
+
+/* ?code block - 4 */
+/* !the below code is to provide clip-path for the video & contact-info */
+
+.contact video{
+    clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+}
+
+.contact-info{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+/*! the above code is to provide clip-path for the video & contact-info */
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.contact{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.contact-info{
+    display: grid;
+    justify-items: center;
+    align-content: flex-start;
+    /* ?why?, if not then contact-info is not visible in it's clip-path */
+}
+
+/* grid assignment ends */
+
+
+
+
+
+
+
+
+
+/* transition starts */
+
+.contact a:hover{
+    background: var(--clr-primary-7);
+}
+
+/* transition ends */
+
+
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (min-width:1000px){
+
+    .contact h1{
+        font-size: 37px;
+    }
+
+    .contact p{
+        font-size: 15.5px;
+    }
+
+    .contact-info{
+        padding-top: 40px;
+    }
+    
+
+}
+
+/* media queries end */

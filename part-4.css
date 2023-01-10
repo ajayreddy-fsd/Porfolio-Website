@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+/* dark shades of primary color*/
+--clr-primary-1: hsl(43, 86%, 17%);
+--clr-primary-2: hsl(43, 77%, 27%);
+--clr-primary-3: hsl(43, 72%, 37%);
+--clr-primary-4: hsl(42, 63%, 48%);
+/* primary/main color */
+--clr-primary-5: hsl(42, 78%, 60%);
+/* lighter shades of primary color */
+--clr-primary-6: hsl(43, 89%, 70%);
+--clr-primary-7: hsl(43, 90%, 76%);
+--clr-primary-8: hsl(45, 86%, 81%);
+--clr-primary-9: hsl(45, 90%, 88%);
+--clr-primary-10: hsl(45, 100%, 96%);
+/* darkest grey - used for headings */
+--clr-grey-1: hsl(209, 61%, 16%);
+--clr-grey-2: hsl(211, 39%, 23%);
+--clr-grey-3: hsl(209, 34%, 30%);
+--clr-grey-4: hsl(209, 28%, 39%);
+/* grey used for paragraphs */
+--clr-grey-5: hsl(210, 22%, 49%);
+--clr-grey-6: hsl(209, 23%, 60%);
+--clr-grey-7: hsl(211, 27%, 70%);
+--clr-grey-8: hsl(210, 31%, 80%);
+--clr-grey-9: hsl(212, 33%, 89%);
+--clr-grey-10: hsl(210, 36%, 96%);
+--clr-white: #fff;
+--ff-primary: "Roboto", sans-serif;
+--ff-secondary: "Open Sans", sans-serif;
+--transition: all 0.3s linear;
+--spacing: 0.25rem;
+--radius: 0.5rem;
+--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+--max-width: 1170px;
+}
+
+.works{
+    background: white;
+    padding-top: 63px;
+    padding-bottom: 80px;
+}
+
+.works h1{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.works hr{
+    background: var(--clr-primary-5);
+    border: 1px solid var(--clr-primary-5);
+    height: 2px;
+    width: 80px;
+}
+
+.works p{
+    font-family: var(--ff-secondary);
+    color: var(--clr-grey-5);
+    font-size: 14px;
+    font-weight: 50;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 65px;
+    padding: 0px 50px;
+    text-align: justify;
+
+    max-width: 500px;
+    /* !why? to limit the number of lines this paragraph is gonna take */
+}
+
+.work{
+    background: var(--clr-primary-5);
+    /* ?why?, this color will be visible when hovered */
+
+    border-radius: 10px;
+
+    width: 85vw;
+    height: 36vh;
+
+    transition: all 0.5s 0s;
+}
+
+.work img{
+    width: 100%;
+    height: 100%;
+    /* !why? to fill the image completely in it's container "work" , remaning things in the container will be placed at the center of their container */
+
+    object-position: center;
+    object-fit: cover;
+    border-radius: 10px;
+
+    transition: all 0.5s 0s;
+}
+
+.work h2{
+    font-family: var(--ff-primary);
+    color: white;
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.work h3{
+    font-family: var(--ff-primary);
+    color: white;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 50;
+    text-align: center;
+}
+
+/* !the below code is to place "work-title" at the center of it's container named "work work-$" */
+
+.work{
+    position: relative;
+}
+
+.work .work-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+    /*? why, to hide project title, until hovered over "work" */
+
+    transition: all 0.5s 0s;
+}
+
+/* !the above code is to place "work-title" at the center of it's container named "work work-$" */
+
+/* styling end */
+
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.works{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.works-container{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    row-gap: 32px;
+}
+
+/* grid assignment ends */
+
+
+
+
+
+
+
+
+
+
+/* transition starts */
+
+/*! following is the code used to create border for "work" using pseudo element */
+
+.work::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    border: 4px solid white;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    transition: all 0.5s 0s;
+}
+
+/*! above is the code used to create border for "work" using pseudo element */
+
+.work:hover::before{
+    opacity: 1;
+    transform: scale(0.8);
+}
+
+.work:hover .work-title{
+    opacity: 1;
+}
+
+.work:hover img{
+    opacity: 0.13;
+}
+
+/* transition ends */
+
+
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (min-width:650px){
+
+    .work{
+        width: 42vw;
+    }
+
+    .works-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
+
+}
+
+@media screen and (min-width:1000px){
+
+    .work{
+        width: 28vw;
+    }
+
+    .works-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (min-width:1200px){
+
+    .work{
+        height: 100%;
+        width: 100%;
+    }
+
+    .works-container{
+        display: grid;
+        
+        grid-template-columns: repeat(3, 360px);
+        grid-template-rows: repeat(2, 200px);
+
+        grid-template-areas:
+        "a b b"
+        "a x y"
+        ;
+    }
+
+    .work-1{
+        grid-area: a;
+    }
+
+    .work-2{
+        grid-area: b;
+    }
+
+    .work-3{
+        grid-area: x;
+    }
+
+    .work-4{
+        grid-area: y;
+    }
+
+}
+
+/* media queries end */

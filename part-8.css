@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+/* dark shades of primary color*/
+--clr-primary-1: hsl(43, 86%, 17%);
+--clr-primary-2: hsl(43, 77%, 27%);
+--clr-primary-3: hsl(43, 72%, 37%);
+--clr-primary-4: hsl(42, 63%, 48%);
+/* primary/main color */
+--clr-primary-5: hsl(42, 78%, 60%);
+/* lighter shades of primary color */
+--clr-primary-6: hsl(43, 89%, 70%);
+--clr-primary-7: hsl(43, 90%, 76%);
+--clr-primary-8: hsl(45, 86%, 81%);
+--clr-primary-9: hsl(45, 90%, 88%);
+--clr-primary-10: hsl(45, 100%, 96%);
+/* darkest grey - used for headings */
+--clr-grey-1: hsl(209, 61%, 16%);
+--clr-grey-2: hsl(211, 39%, 23%);
+--clr-grey-3: hsl(209, 34%, 30%);
+--clr-grey-4: hsl(209, 28%, 39%);
+/* grey used for paragraphs */
+--clr-grey-5: hsl(210, 22%, 49%);
+--clr-grey-6: hsl(209, 23%, 60%);
+--clr-grey-7: hsl(211, 27%, 70%);
+--clr-grey-8: hsl(210, 31%, 80%);
+--clr-grey-9: hsl(212, 33%, 89%);
+--clr-grey-10: hsl(210, 36%, 96%);
+--clr-white: #fff;
+--ff-primary: "Roboto", sans-serif;
+--ff-secondary: "Open Sans", sans-serif;
+--transition: all 0.3s linear;
+--spacing: 0.25rem;
+--radius: 0.5rem;
+--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+--max-width: 1170px;
+}
+
+.blog{
+    background: var(--clr-grey-10);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.blog h1{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.blog hr{
+    background: var(--clr-primary-5);
+    border: 1px solid var(--clr-primary-5);
+    height: 2px;
+    width: 80px;
+    margin-bottom: 80px;
+}
+
+.blog h2{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-top: 23px;
+    margin-bottom: 15px;
+}
+
+.blog p{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-4);
+    font-size: 15px;
+    font-weight: 0;
+    margin-top: 13px;
+    margin-bottom: 11px;
+    line-height: 21px;
+}
+
+.post .post-footer p{
+    color: var(--clr-primary-5);
+    font-family: var(--ff-secondary);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* styling end */
+
+
+
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code is to style the main-image of each article */
+
+.post{
+    width: 90vw;
+    height: 65vh;
+    border-radius: 10px;
+}
+
+
+/**special-code *//**special-code *//**special-code */
+/**special-code *//**special-code *//**special-code */
+/**special-code *//**special-code *//**special-code */
+/**special-code *//**special-code *//**special-code */
+/**special-code *//**special-code *//**special-code */
+.card-front{
+    width: 100%;
+    height: 100%;
+    background: white;
+
+    /*! why all this hungama ?
+    to fit the main-image of the article in it's post perfectly
+
+    --> note that main-img is the child of "card-front" & this is the child of "post post-$"
+
+    -->above code block fixes the dimensions of "post post-$"
+    -->this code makes "card-front" = 100% of "post post-$"     both wrt width & height
+    -->below code is for main-image which is placed wrt "card-fornt" */
+}
+
+
+.post img{
+    width: 100%;
+    height: 48%;
+    /* !why?
+    because the image must fit 100% width of it's container & 50% height of it's container */
+
+    object-position: center;
+    object-fit: cover;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* !the above code is to style the main-image of each article */
+
+
+
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code is to style the profile-picture in the article */
+
+.post .post-footer img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+/* !the above code is to style the profile-picture in the article */
+
+
+
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code is to style the anchor-tag of the article */
+
+.blog a{
+    color: var(--clr-primary-1);
+    background: var(--clr-primary-5);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--ff-secondary);
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    display: block;
+    width: 115px;
+    text-align: center;
+    padding: 8px 18px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.267);
+
+    transition: all 0.3s 0s;
+}
+
+/* !the above code is to style the anchor-tag of the article */
+
+
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code is to create margin for post-info */
+
+.post-info{
+    margin: 10px 20px;
+}
+
+/* !the above code is to create margin for post-info */
+
+
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code is to place the "post-footer" at the end of it's container by name "post" */
+
+.post{
+    position: relative;
+}
+
+/* note that this image is positioned not wrt it's immediate parent, but wrt it's grand-parent */
+.post-footer img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+/* note that this paragraph is positioned not wrt it's immediate parent, but wrt it's grand-parent */
+.post-footer p{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px 20px;
+}
+
+/* !the above code is to place the "post-footer" at the end of it's container by name "post" */
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code styles the card-back */
+
+.card-back{
+    width: 100%;
+    height: 100%;
+
+    /* *"card-back's" parent is "post post-$", so above percentages are wrt "post post-$" */
+
+    background: var(--clr-primary-10);
+}
+
+/* !the above code styles the card-back */
+
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code is to position the "card-back" such that it fills it's container "post" completely*/
+
+.post{
+    position: relative;
+}
+
+.card-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* !the above code is to position the "card-back" such that it fills it's container "post" completely*/
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code is to place the "post-link" at the center of it's container "post" */
+
+.post{
+    position: relative;
+}
+
+.card-back a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* !the above code is to place the "post-link" at the center of it's container "post" */
+
+
+
+
+
+
+
+
+
+
+/* grid assignment starts */
+
+.blog{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.posts-container{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    row-gap: 50px;
+}
+
+.post-footer{
+    display: grid;
+    grid-template-columns: repeat(2, 75px);
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 20px 20px;
+    margin-top: 6%;
+    /*! why?
+    to create margin for post-footer */
+}
+
+/* grid assignment ends */
+
+
+
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code hides whatever u want */
+
+.card-front{
+    opacity: 1;
+}
+
+.card-back{
+    opacity: 0;
+}
+
+/* !the above code hides whatever u want */
+
+
+
+
+
+
+
+
+
+
+/* ?code block*/
+/* !the below code is pre-transition setup */
+
+.post, .card-front, .card-back{
+
+    transition: opacity 0.01s linear 1s, transform 2s linear 0s;
+
+    /* *why?, since i want opacity to change instantly with a delay, also including "linear" is a must for smooth transition */
+}
+
+.card-back{
+
+    transform: rotateY(-180deg);
+
+    /* *why wrting the property is important? if u want to put this prop in  */
+    /* !"post:hover  card-back{}"  */
+    /* *then text inside the a-tag will be reversed, to overcome that, shd write it here */
+}
+
+/* !the above code is pre-transition setup */
+
+
+
+
+
+
+
+
+
+/* transition starts */
+
+.blog a:hover{
+    background: var(--clr-primary-7);
+}
+
+.post:hover .card-front{
+    opacity: 0;
+    transform: rotateY(-180deg);
+}
+
+.post:hover .card-back{
+    opacity: 1;
+
+    transform: rotateY(0deg);
+
+    /* ?why zero-deg?, since the element is already rotated by "180-deg" in it's original-code-block, I'm writing here zero-deg to bring it back to it's original position */
+
+    /** also, since i have written here zero-deg, it doesn't mean that the element won't rotate, it depends on the original position of the element.  */
+
+    /* ![always remember degree-positions are fixed] */
+}
+
+/* transition ends */
+
+
+
+
+
+
+
+
+
+/* media queries start */
+
+@media screen and (min-width:750px){
+
+    .post{
+        width: 44vw;
+        height: 70vh;
+    }
+
+    .posts-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 25px;
+    }
+
+}
+
+@media screen and (min-width:1100px){
+
+    .post{
+        width: 28vw;
+    }
+
+    .posts-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 40px;
+    }
+
+}
+
+/* media queries end */
+
+
+
+
+
