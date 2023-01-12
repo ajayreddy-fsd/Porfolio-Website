@@ -1282,6 +1282,9 @@
     letter-spacing: 4px;
     margin-top: 23px;
     margin-bottom: 30px;
+
+    text-align: center;
+    line-height: 60px;
 }
 
 .skills h3{
@@ -1428,7 +1431,7 @@
 
     .skill-set-container{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         -moz-column-gap: 8%;
              column-gap: 8%;
     }
