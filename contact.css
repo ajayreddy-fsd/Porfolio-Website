@@ -97,6 +97,7 @@
 .contact-contact a{
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bolder;
     color: var(--clr-primary-5);
 
     transition: all 0.3s 0s;
