@@ -126,7 +126,7 @@
     width: 85vw;
     max-width: 450px;
 
-    height: 75vh;
+    height: 80vh;
     background: var(--clr-grey-10);
     border-radius: 10px;
 }
@@ -284,8 +284,10 @@
     place-items: center center;
 }
 
-.project-container{
+.projects-container{
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 30px;
     place-content: center center;
     place-items: center center;
 }

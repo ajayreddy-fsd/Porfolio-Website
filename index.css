@@ -301,7 +301,7 @@
        object-position: center;
     -o-object-fit: cover;
        object-fit: cover;
-    border-radius: 8px;
+    border-radius: 30px;
 }
 
 .about h1{
