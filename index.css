@@ -769,6 +769,12 @@
     transition: all 0.5s 0s;
 }
 
+.work #camp{
+    -o-object-position: bottom;
+
+    object-position: bottom;
+}
+
 .work h2{
     font-family: var(--ff-primary);
     color: white;
@@ -936,6 +942,7 @@
         grid-template-areas:
         "a b b"
         "a x y"
+        "c d e"
         ;
     }
 
@@ -953,6 +960,18 @@
 
     .work-4{
         grid-area: y;
+    }
+
+    .work-5{
+        grid-area: c;
+    }
+
+    .work-6{
+        grid-area: d;
+    }
+
+    .work-7{
+        grid-area: e;
     }
 
 }
