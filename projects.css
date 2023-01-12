@@ -84,7 +84,8 @@
     color: var(--clr-grey-1);
     text-transform: capitalize;
     font-size: 15px;
-    letter-spacing: 4px;
+    /* letter-spacing: 2px; */
+    line-height: 20px;
     margin-bottom: 10px;
 }
 
@@ -93,6 +94,7 @@
     color: var(--clr-grey-5);
     font-size: 14px;
     line-height: 21px;
+    text-align: justify;
 }
 
 .project-project i{
