@@ -467,6 +467,8 @@
     justify-items: center;
     align-content: center;
     row-gap: 35px;
+
+    text-align: center;
 }
 
 .copyrights .social-media{
