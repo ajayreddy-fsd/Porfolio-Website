@@ -2595,6 +2595,8 @@
     font-size: 35px;
     text-shadow: none;
     font-family: 'Moon Dance', cursive;
+    text-decoration: none;
+    letter-spacing: 4px;
 }
 
 
@@ -2641,9 +2643,45 @@
 
 @media screen and (max-width:1000px){
 
-    .navigation{
-        display: none;
+    .menu{
+        height: 60px;
     }
+
+    .menu #logo{
+        font-size: 20px;
+    }
+
+    .menu a{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .nav-links-set{
+        -moz-column-gap: 0px;
+        column-gap: 0px;
+    }
+
+    .menu{
+        grid-template-columns: 1.5fr 3fr;
+    }
+
+    .navigation{
+        justify-self: end;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .nav-links-set{
+        grid-template-columns: 55px 60px 85px 70px;
+    }
+}
+
+@media screen and (max-width:1000px){
+
+    /* .navigation{
+        display: none;
+    } */
 
 }
 
