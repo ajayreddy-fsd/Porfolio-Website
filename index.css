@@ -237,8 +237,7 @@
 @media screen and (max-width:700px) {
 
     .hero{
-        padding-top: 20px;
-        height: 140vh;
+        height: 120vh;
     }
 
     .hero h1{
