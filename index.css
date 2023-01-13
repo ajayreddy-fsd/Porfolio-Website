@@ -1119,6 +1119,25 @@
 
 /* media queries start */
 
+@media screen and (max-width:1200px) {
+
+    .work{
+        background: black;
+    }
+
+    .work img{
+        opacity: 0.7;
+    }
+
+    .work .work-title{
+        opacity: 1;
+    }
+
+    .work:hover img{
+        opacity: 0.7;
+    }
+}
+
 @media screen and (min-width:650px){
 
     .work{
@@ -1131,7 +1150,6 @@
         -moz-column-gap: 30px;
              column-gap: 30px;
     }
-
 }
 
 @media screen and (min-width:1000px){
