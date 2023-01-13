@@ -864,6 +864,11 @@
 
 @media screen and (min-width:10px){
 
+    .service h2{
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+
     .service{
         width: 40vw;
         height: 38vh;
