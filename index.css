@@ -852,19 +852,23 @@
 
 /* media queries start */
 
-@media screen and (min-width:700px){
+@media screen and (min-width:10px){
 
     .service{
-        width: 45vw;
-        height: 48vh;
+        width: 40vw;
+        height: 38vh;
         max-width: 370px;
     }
 
     .services-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        -moz-column-gap: 30px;
-             column-gap: 30px;
+        -moz-column-gap: 25px;
+             column-gap: 25px;
+    }
+
+    .service{
+        text-align: center;
     }
     
 
