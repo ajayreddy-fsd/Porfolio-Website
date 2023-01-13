@@ -331,7 +331,84 @@
 
 
 
+/* media query code starts */
 
+@media screen and (max-width:800px) {
+    
+    .projects-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .project-project .project{
+        width: 75vw;
+        max-width: 400px;
+
+        height: 70vh;
+    }
+
+    .project-project .project-1,
+    .project-project .project-2,
+    .project-project .project-11,
+    .project-project .project-14,
+    .project-project .project-20,
+    .project-project .project-21,
+    .project-project .project-22{
+        height: 95vh;
+    }
+
+    .project-project .project-5,
+    .project-project .project-6,
+    .project-project .project-18,
+    .project-project .project-19{
+        height: 80vh;
+    }
+
+    .project-project .project-21,
+    .project-project .project-22{
+        height: 105vh;
+    }
+
+    .project-project .project-9{
+        height: 110vh;
+    }
+
+}
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+
+    .projects-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 5px;
+    }
+
+    .project-project .project{
+        width: 98%;
+        max-width: 400px;
+
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1400px) {
+    
+    .projects-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px 5px;
+    }
+
+    .project-project .project{
+        width: 95%;
+        max-width: 400px;
+
+        height: 100vh;
+    }
+
+}
+
+/* media query code ends */
 
 
 
