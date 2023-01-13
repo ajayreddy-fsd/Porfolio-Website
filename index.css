@@ -2463,6 +2463,7 @@
     color: var(--clr-grey-5);
     font-size: 20px;
     text-transform: capitalize;
+    text-align: center;
 }
 
 /* styling end */
