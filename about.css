@@ -101,6 +101,13 @@
     text-decoration: none;
     font-style: italic;
     font-weight: 400;
+    color: var(--clr-primary-5);
+
+    transition: all 0.4s 0s;
+}
+
+#last-p a:hover{
+    color: rgba(0, 0, 0, 0.462);
 }
 
 /* styling end */

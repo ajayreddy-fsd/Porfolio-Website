@@ -1074,6 +1074,8 @@
     justify-items: center;
     align-content: center;
     row-gap: 32px;
+
+    margin-top: 60px;
 }
 
 /* grid assignment ends */
